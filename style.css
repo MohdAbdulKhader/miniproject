@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+h1{
+    font-size: 100px;
+    background-color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    
+    background-image: url("https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTglGyGiuBPpY4wKKz_jbXNnrn_2bq2zuA4cuuwXMgq0bjCpqJYWew3bt1jkq_hHgNtO2wtJpp29zfMSJYwmhgZ99X_MX6KpIseMaQf803wUklxF2GJyQ6eRA&usqp=CAE");
+background-size: cover;
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: lightblue;
+    background-image: url("https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSfnbOYo3H0Zmj7pujSkgxrK1Kbwv-UShyez2iUeYMQgvoX13JAVpTJ0RAYgO0dxDcWFbjgNh3MQmI48Oe0AS_-cMlQzrM5plDde5rAlajs&usqp=CAE");
+    background-size: cover;
+
+}
+/*.active-left .left{
+    width: 75%;
+}
+.active-left .right{
+    width: 25%;
+}*/
+.left, .right {
+    transition: width 2s linear;
+}
